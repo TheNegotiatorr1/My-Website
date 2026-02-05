@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The_Negotiator1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+    body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: system-ui, sans-serif;
+        color: #1e1b4b;
+        background: radial-gradient(circle at top, #1e1b4b, #020617 70%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        text-align: center;
+        transform: translateY(-100px);
+    }
+
+    h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+        background: linear-gradient(90deg, #a855f7, #38bdf8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    p {
+        color: #a78bfa;
+        margin-bottom: 40px;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        align-items: center;
+    }
+
+    a.link {
+        width: 320px;
+        padding: 16px 24px;
+        border-radius: 999px;
+        text-decoration: none;
+        color: #9c9797;
+        font-size: 18px;
+
+        display: flex;
+        align-items: center;
+        gap: 14px;
+
+        background: linear-gradient(90deg, #1e293b, #020617);
+        box-shadow:
+          0 0 15px rgba(56, 189, 248, 0.25),
+          inset 0 0 10px rgba(168, 85, 247, 0.2);
+
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    /* NEW FIX: Icon wrapper */
+    a.link .icon {
+        width: 22px;
+        height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0; /* prevents flex from stretching */
+    }
+
+    a.link .icon img {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+    }
+
+    a.link:hover {
+        transform: translateY(-4px) scale(1.03);
+        box-shadow:
+          0 0 25px rgba(56, 189, 248, 0.5),
+          inset 0 0 15px rgba(168, 85, 247, 0.4);
+    }
+
+    @media (max-width: 480px) {
+        a.link {
+            width: 90%;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+    }
+</style>
+</head>
+
+<body>
+<div class="container">
+    <h1>Welcome</h1>
+    <p>Here are all my links:</p>
+
+    <div class="links">
+        <a class="link" href="https://www.nexusmods.com/profile/TheNegotiator11/mods" target="_blank">
+            <span class="icon">
+                <img src="https://www.nexusmods.com/favicon.ico" alt="Nexus Mods">
+            </span>
+            Nexus Mods
+        </a>
+
+        <a class="link" href="https://forum.cfx.re/u/Thanosss/activity" target="_blank">
+            <span class="icon">
+                <img src="https://cdn.simpleicons.org/fivem/00E676" alt="FiveM">
+            </span>
+            Cfx Fivem
+        </a>
+
+        <a class="link" href="https://github.com/TheNegotiatorr1" target="_blank">
+            <span class="icon">
+                <img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub">
+            </span>
+            GitHub
+        </a>
+
+        <a class="link" href="https://www.youtube.com/@The_Negotiator1" target="_blank">
+            <span class="icon">
+                <img src="https://cdn.simpleicons.org/youtube/FF0000" alt="YouTube">
+            </span>
+            YouTube
+        </a>
+
+        <a class="link" href="https://discord.gg/TdDHwgsGaM" target="_blank">
+            <span class="icon">
+                <img src="https://cdn.simpleicons.org/discord/5865F2" alt="Discord">
+            </span>
+            Discord Server
+        </a>
+    </div>
+</div>
+</body>
+</html>
